@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo"
+            >CIREBON<span style="color: orange">an</span></a
+          >
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#top_pariwisata">Top Pariwisata</a></li>
+            <li><a href="#top_kuliner">Top Kuliner</a></li>
+            <li><a href="#pesan">Pesan</a></li>
+            <li style="padding-right: 90px"></li>
+          </ul>
+          <div class="tombol">
+            <img
+              src="images/burger-menu-svgrepo-com.svg"
+              alt="Menu"
+              id="hamburger-menu"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="home-content">
+        <h1>Welcome to CIREBON<span style="color: orange">an</span></h1>
+        <p>Temukan tempat, makanan, dan budaya terbaik</p>
+      </div>
+    </section>
+
+    <!-- Top Pariwisata Section with Cards -->
+    <section id="top_pariwisata">
+      <h2>TOP PARIWISATA</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/batu-lawang.jpg" alt="batu-lawang" />
+          <p>Batu Lawang</p>
+        </div>
+        <div class="card">
+          <img src="images/gua-sanyuragi2.jpg" alt="gua-sanyuragi" />
+          <p>Gua Sanyuragi</p>
+        </div>
+        <div class="card">
+          <img src="images/keramat-kelangon.jpg" alt="keramat-kelangon" />
+          <p>Keramat Kelangon</p>
+        </div>
+        <div class="card">
+          <img src="images/pantai-kejawanan2.jpg" alt="pantai-kejawanan" />
+          <p>Pantai Kejawanan</p>
+        </div>
+        <div class="card">
+          <img src="images/telaga-niren.jpg" alt="telaga-niren" />
+          <p>Telaga Niren</p>
+        </div>
+        <!-- <div class="card">
+          <img src="" alt="" />
+          <p></p>
+        </div>
+        <div class="card">
+          <img src="" alt="" />
+          <p></p>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="top_kuliner">
+      <h2>TOP KULINER</h2>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>Nama Kuliner</th>
+            <th>Deskripsi</th>
+            <th>Harga</th>
+          </tr>
+          <tr>
+            <td>Empal Gentong</td>
+            <td>
+              Sup khas Cirebon dengan daging sapi yang dimasak dalam gentong
+              tanah liat.
+            </td>
+            <td>Rp 25.000</td>
+          </tr>
+          <tr>
+            <td>Nasi Jamblang</td>
+            <td>
+              Nasi yang disajikan dengan berbagai lauk-pauk, dibungkus daun
+              jati.
+            </td>
+            <td>Rp 20.000</td>
+          </tr>
+          <tr>
+            <td>Tahu Gejrot</td>
+            <td>
+              Tahu goreng yang disajikan dengan saus pedas manis khas Cirebon.
+            </td>
+            <td>Rp 10.000</td>
+          </tr>
+          <tr>
+            <td>Sate Kalong</td>
+            <td>Sate daging kerbau dengan rasa gurih manis yang khas.</td>
+            <td>Rp 15.000</td>
+          </tr>
+          <tr>
+            <td>Docang</td>
+            <td>
+              Makanan tradisional dengan lontong, sayuran, dan parutan kelapa.
+            </td>
+            <td>Rp 12.000</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Pesan Section with Form -->
+    <section id="pesan">
+      <h2>Pesan Sekarang</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Kontak:</label>
+          <input type="text" id="contact" name="contact" required />
+        </div>
+        <div class="form-group">
+          <label for="order-type">Pesanan:</label>
+          <select id="order-type" name="order-type" required>
+            <option value="" disabled selected>Pilih Pesanan</option>
+            <optgroup label="Pariwisata">
+              <option value="pantai_karang_sembung">Batu Lawang</option>
+              <option value="keraton_kasepuhan">Gua Sanyuragi</option>
+              <option value="cirebon_waterland">Keramat Kelangon</option>
+              <option value="bukit_gronggong">Pantai Kejawanan</option>
+              <option value="bukit_gronggong">Telaga Niren</option>
+            </optgroup>
+            <optgroup label="Kuliner">
+              <option value="empal_gentong">Empal Gentong</option>
+              <option value="nasi_jamblang">Nasi Jamblang</option>
+              <option value="tahu_gejrot">Tahu Gejrot</option>
+              <option value="sate_kalong">Sate Kalong</option>
+            </optgroup>
+          </select>
+        </div>
+        <button type="submit">Pesan</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 CIREBONan</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
